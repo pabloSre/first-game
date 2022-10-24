@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Montserrat:wght@200&display=swap');
+
+body {
+  font-family: 'Bungee Inline', cursive;
+  background-color:#FEC260 ;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  align-items: center;
+
+}
+.titulo {
+    color: mediumslateblue;
+    font-size: 60px;
+    margin: -29px;
+
+    
+}
+ .subtitulo {
+   color: lightcoral;
+   font-size: -19px;
+}
+
+.tarjetas, .tarjetas-ataques {
+  display: flex;
+  gap: 10px;
+
+}
+
+.tarjeta-de-pekis {
+    width: 180px;
+    height: 85px;
+    background: #2A0944;
+    padding: 10px;
+    box-sizing: border-box; 
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 20px; 
+    display: flex;
+    color: #3FA796;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-pekis img {
+  width: 100px;
+}
+#boton-mascotas {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+
+input {
+display: none;
+}
+
+input:checked + label {
+  background-color: #A10035;
+}
+
+#seleccionar-ataque {
+  flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #2A0944;
+    padding: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 20px; 
+    color: #3FA796;
+    font-family: 'Bungee Inline', cursive;
+}
+
+
+#mensajes {
+    width: 106px;
+    background: aquamarine;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 95px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+  border: none;
+  color: #232323;
+  font-family: 'Bungee Inline', cursive;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  
+
+}
+#vidas-jugador, #vidas-enemigo {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+.ataques-jugador, .ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;  
+  justify-content:center;
+}
+#ver-mapa button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+#mapa{
+  border: 2px solid rgb(0, 0, 0);
+}
+
+@media (max-width: 560px ) {
+.tarjetas, .tarjetas-ataques {
+  flex-direction: column;
+  
+}
+}
+@media (max-width: 300px ) {
+  #ver-mapa div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+}
